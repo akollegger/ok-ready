@@ -1,0 +1,65 @@
+{
+  "name": "ok-ready",
+  "version": "1.0.0",
+  "description": "OK, does [github, maven, npm, nuget, pypi] have version [x.y.z] of [something/something]?",
+  "main": "dist/ok-ready.js",
+  "module": "dist/ok-ready.mjs",
+  "jsnext:main": "dist/ok-ready.mjs",
+  "scripts": {
+    "prebuild": "eslint lib test",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "mocha",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akollegger/ok-ready.git"
+  },
+  "keywords": [
+    "es6",
+    "modules",
+    "rollup",
+    "bundle",
+    "browser"
+  ],
+  "author": "Andreas Kollegger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akollegger/ok-ready/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "bin": {
+    "ok": "bin/ok.js"
+  },
+  "homepage": "https://github.com/akollegger/ok-ready#readme",
+  "dependencies": {
+    "apollo-client": "^0.5.24",
+    "es6-promise": "^4.0.5",
+    "graphql-tag": "^1.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.3",
+    "most": "^1.1.1",
+    "nconf": "^0.8.4",
+    "vorpal": "^1.11.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-external-helpers": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "babelrc-rollup": "^3.0.0",
+    "eslint": "^3.12.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "rollup": "^0.37.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-istanbul": "^1.1.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-watch": "^2.5.0"
+  }
+}

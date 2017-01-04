@@ -1,0 +1,6 @@
+properties { neo4j:'3.1.0', java:'1.1.0', js:'1.0.5', dotnet:'1.0.2', python:'1.0.2' }
+check maven org.neo4j:neo4j-kernel ${neo4j} --verbose
+check maven org.neo4j.driver:neo4j-java-driver ${java} --verbose
+check npm   neo4j-driver ${js} --verbose
+check nuget Neo4j.Driver ${dotnet} --verbose
+check pypi  neo4j-driver ${python} --verbose
