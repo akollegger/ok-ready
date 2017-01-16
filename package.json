@@ -1,6 +1,6 @@
 {
   "name": "ok-ready",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OK, does [github, maven, npm, nuget, pypi] have version [x.y.z] of [something/something]?",
   "main": "dist/ok-ready.js",
   "module": "dist/ok-ready.mjs",
