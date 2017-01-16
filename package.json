@@ -39,6 +39,7 @@
   "homepage": "https://github.com/akollegger/ok-ready#readme",
   "dependencies": {
     "apollo-client": "^0.5.24",
+    "chalk": "^1.1.3",
     "es6-promise": "^4.0.5",
     "graphql-tag": "^1.1.2",
     "isomorphic-fetch": "^2.2.1",

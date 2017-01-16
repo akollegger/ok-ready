@@ -1,5 +1,5 @@
 // import { multiply } from '../';
-// import { strictEqual } from 'assert';
+import { ok } from 'assert';
 //
 // describe('multiply', () => {
 //   it('returns 0 when either argument is 0', () => {
@@ -26,3 +26,9 @@
 //     strictEqual(multiply(-2, -2), 4);
 //   });
 // });
+
+describe('hello', () => {
+  it('is friendly', () => {
+    ok(true, "hello!");
+  });
+})
