@@ -1,6 +1,6 @@
 {
   "name": "ok-ready",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "OK, does [github, maven, npm, nuget, pypi] have version [x.y.z] of [something/something]?",
   "main": "dist/ok-ready.js",
   "module": "dist/ok-ready.mjs",
@@ -11,7 +11,7 @@
     "watch": "rollup -c -w",
     "pretest": "npm run build",
     "test": "mocha",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,8 @@
   },
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "bin"
   ],
   "bin": {
     "ok": "bin/ok.js"
